@@ -33,6 +33,51 @@ class PHPCheatSheetString {
          *   34.47% @see self::strtr
          *
          *
+         * Find / Get / Get info
+         * @see self::substr — Return part of a string
+         * @see self::strlen — Get string length
+         * @see self::strpos — Find the position of the first occurrence of a substring in a string
+         * @see self::strrpos — Find the position of the last occurrence of a substring in a string
+         * @see self::strstr — Find the first occurrence of a string
+         * @see self::strripos — Find the position of the last occurrence of a case-insensitive substring in a string
+         * @see self::strspn — Finds the length of the initial segment of a string consisting entirely of characters contained within a given mask
+         *
+         * Change
+         * @see self::str_replace — Replace all occurrences of the search string with the replacement string
+         * @see self::strtr — Translate characters or replace substrings
+         * @see self::strtolower — Make a string lowercase
+         * @see self::strtoupper — Make a string uppercase
+         * @see self::trim — Strip whitespace (or other characters) from the beginning and end of a string
+         * @see self::ltrim — Strip whitespace (or other characters) from the beginning of a string
+         * @see self::rtrim — Strip whitespace (or other characters) from the end of a string
+         * @see self::chop — Alias of rtrim
+         * @see self::ucfirst — Make a string's first character uppercase
+         * @see self::ucwords — Uppercase the first character of each word in a string
+         *
+         * Transform / Create new
+         * @see self::explode — Split a string by a string
+         * @see self::implode — Join array elements with a string
+         * @see self::join — Alias of implode
+         * @see self::bin2hex — Convert binary data into hexadecimal representation
+         * @see self::hex2bin — Decodes a hexadecimally encoded binary string
+         * @see self::chr — Generate a single-byte string from a number
+         * @see self::ord — Convert the first byte of a string to a value between 0 and 255
+         * @see self::md5 — Calculate the md5 hash of a string
+         * @see self::md5_file — Calculates the md5 hash of a given file
+         * @see self::str_repeat — Repeat a string
+         * @see self::htmlspecialchars_decode — Convert special HTML entities back to characters
+         * @see self::htmlspecialchars — Convert special characters to HTML entities
+         *
+         * Print
+         * @see self::print — Output a string
+         * @see self::printf — Output a formatted string
+         * @see self::sprintf — Return a formatted string
+         * @see self::fprintf — Write a formatted string to a stream
+         * @see self::vfprintf — Write a formatted string to a stream
+         * @see self::vprintf — Output a formatted string
+         * @see self::vsprintf — Return a formatted string
+         *
+         *
          * Slash
          * @see self::addslashes — Quote string with slashes
          * @see self::addcslashes — Quote string with slashes in a C style
@@ -40,9 +85,6 @@ class PHPCheatSheetString {
          * @see self::stripcslashes — Un-quote string quoted with addcslashes
          *
          * --- not done
-         * @see self::bin2hex — Convert binary data into hexadecimal representation
-         * @see self::chop — Alias of rtrim
-         * @see self::chr — Generate a single-byte string from a number
          * @see self::chunk_split — Split a string into smaller chunks
          * @see self::convert_cyr_string — Convert from one Cyrillic character set to another
          * @see self::convert_uudecode — Decode a uuencoded string
@@ -51,51 +93,34 @@ class PHPCheatSheetString {
          * @see self::crc32 — Calculates the crc32 polynomial of a string
          * @see self::crypt — One-way string hashing
          * @see self::echo — Output one or more strings
-         * @see self::explode — Split a string by a string
-         * @see self::fprintf — Write a formatted string to a stream
          * @see self::get_html_translation_table — Returns the translation table used by htmlspecialchars and htmlentities
          * @see self::hebrev — Convert logical Hebrew text to visual text
          * @see self::hebrevc — Convert logical Hebrew text to visual text with newline conversion
-         * @see self::hex2bin — Decodes a hexadecimally encoded binary string
          * @see self::html_entity_decode — Convert HTML entities to their corresponding characters
          * @see self::htmlentities — Convert all applicable characters to HTML entities
-         * @see self::htmlspecialchars_decode — Convert special HTML entities back to characters
-         * @see self::htmlspecialchars — Convert special characters to HTML entities
-         * @see self::implode — Join array elements with a string
-         * @see self::join — Alias of implode
          * @see self::lcfirst — Make a string's first character lowercase
          * @see self::levenshtein — Calculate Levenshtein distance between two strings
          * @see self::localeconv — Get numeric formatting information
-         * @see self::ltrim — Strip whitespace (or other characters) from the beginning of a string
-         * @see self::md5_file — Calculates the md5 hash of a given file
-         * @see self::md5 — Calculate the md5 hash of a string
          * @see self::metaphone — Calculate the metaphone key of a string
          * @see self::money_format — Formats a number as a currency string
          * @see self::nl_langinfo — Query language and locale information
          * @see self::nl2br — Inserts HTML line breaks before all newlines in a string
          * @see self::number_format — Format a number with grouped thousands
-         * @see self::ord — Convert the first byte of a string to a value between 0 and 255
          * @see self::parse_str — Parses the string into variables
-         * @see self::print — Output a string
-         * @see self::printf — Output a formatted string
          * @see self::quoted_printable_decode — Convert a quoted-printable string to an 8 bit string
          * @see self::quoted_printable_encode — Convert a 8 bit string to a quoted-printable string
          * @see self::quotemeta — Quote meta characters
-         * @see self::rtrim — Strip whitespace (or other characters) from the end of a string
          * @see self::setlocale — Set locale information
          * @see self::sha1_file — Calculate the sha1 hash of a file
          * @see self::sha1 — Calculate the sha1 hash of a string
          * @see self::similar_text — Calculate the similarity between two strings
          * @see self::soundex — Calculate the soundex key of a string
-         * @see self::sprintf — Return a formatted string
          * @see self::sscanf — Parses input from a string according to a format
          * @see self::str_contains — Determine if a string contains a given substring
          * @see self::str_ends_with — Checks if a string ends with a given substring
          * @see self::str_getcsv — Parse a CSV string into an array
          * @see self::str_ireplace — Case-insensitive version of str_replace
          * @see self::str_pad — Pad a string to a certain length with another string
-         * @see self::str_repeat — Repeat a string
-         * @see self::str_replace — Replace all occurrences of the search string with the replacement string
          * @see self::str_rot13 — Perform the rot13 transform on a string
          * @see self::str_shuffle — Randomly shuffles a string
          * @see self::str_split — Convert a string to an array
@@ -109,35 +134,19 @@ class PHPCheatSheetString {
          * @see self::strip_tags — Strip HTML and PHP tags from a string
          * @see self::stripos — Find the position of the first occurrence of a case-insensitive substring in a string
          * @see self::stristr — Case-insensitive strstr
-         * @see self::strlen — Get string length
          * @see self::strnatcasecmp — Case insensitive string comparisons using a "natural order" algorithm
          * @see self::strnatcmp — String comparisons using a "natural order" algorithm
          * @see self::strncasecmp — Binary safe case-insensitive string comparison of the first n characters
          * @see self::strncmp — Binary safe string comparison of the first n characters
          * @see self::strpbrk — Search a string for any of a set of characters
-         * @see self::strpos — Find the position of the first occurrence of a substring in a string
          * @see self::strrchr — Find the last occurrence of a character in a string
          * @see self::strrev — Reverse a string
-         * @see self::strripos — Find the position of the last occurrence of a case-insensitive substring in a string
-         * @see self::strrpos — Find the position of the last occurrence of a substring in a string
-         * @see self::strspn — Finds the length of the initial segment of a string consisting entirely of characters contained within a given mask
-         * @see self::strstr — Find the first occurrence of a string
          * @see self::strtok — Tokenize string
-         * @see self::strtolower — Make a string lowercase
-         * @see self::strtoupper — Make a string uppercase
-         * @see self::strtr — Translate characters or replace substrings
          * @see self::substr_compare — Binary safe comparison of two strings from an offset, up to length characters
          * @see self::substr_count — Count the number of substring occurrences
          * @see self::substr_replace — Replace text within a portion of a string
-         * @see self::substr — Return part of a string
-         * @see self::trim — Strip whitespace (or other characters) from the beginning and end of a string
-         * @see self::ucfirst — Make a string's first character uppercase
-         * @see self::ucwords — Uppercase the first character of each word in a string
          * @see self::utf8_decode — Converts a string from UTF-8 to ISO-8859-1, replacing invalid or unrepresentable characters
          * @see self::utf8_encode — Converts a string from ISO-8859-1 to UTF-8
-         * @see self::vfprintf — Write a formatted string to a stream
-         * @see self::vprintf — Output a formatted string
-         * @see self::vsprintf — Return a formatted string
          * @see self::wordwrap — Wraps a string to a given number of characters
          */
     }
